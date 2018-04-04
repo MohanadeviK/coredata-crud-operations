@@ -90,7 +90,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate, MGSwipeTab
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let licenseVC = self.storyboard?.instantiateViewController(withIdentifier: "LicenseViewController") as? LicenseViewController
+        let selectedPerson = self.personDetails[indexPath.row]
+        let licenseVC = self.storyboard?.instantiateViewController(withIdentifier: "CorrespondingLicenseViewController") as? CorrespondingLicenseViewController
+        licenseVC?.individualPerson = selectedPerson
         self.navigationController?.pushViewController(licenseVC!, animated: true)
     }
 }

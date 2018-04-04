@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D327299E20746C68004A02D8 /* CorrespondingLicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327299D20746C68004A02D8 /* CorrespondingLicenseViewController.swift */; };
 		D33C8CC020724EE2006E8521 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D33C8CBB20724EE1006E8521 /* Info.plist */; };
 		D33C8CC120724EE2006E8521 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33C8CBE20724EE1006E8521 /* MGSwipeTableCell.m */; };
 		D33C8CC220724EE2006E8521 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D33C8CBF20724EE1006E8521 /* MGSwipeButton.m */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D327299D20746C68004A02D8 /* CorrespondingLicenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrespondingLicenseViewController.swift; sourceTree = "<group>"; };
 		D33C8CBB20724EE1006E8521 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D33C8CBC20724EE1006E8521 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
 		D33C8CBD20724EE1006E8521 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				D3818EED207236FD0025B394 /* ViewController.swift */,
 				D33C8CC82072566B006E8521 /* AddNewPersonViewController.swift */,
 				D33C8CCA207263E2006E8521 /* LicenseViewController.swift */,
+				D327299D20746C68004A02D8 /* CorrespondingLicenseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				D3818EF4207236FD0025B394 /* CoreData_OneToOne.xcdatamodeld in Sources */,
 				D33C8CCB207263E2006E8521 /* LicenseViewController.swift in Sources */,
 				D33C8CD020729FE1006E8521 /* ShowAlertController.swift in Sources */,
+				D327299E20746C68004A02D8 /* CorrespondingLicenseViewController.swift in Sources */,
 				D3818F22207242AA0025B394 /* DrivingLicense+CoreDataClass.swift in Sources */,
 				D3818F23207242AA0025B394 /* DrivingLicense+CoreDataProperties.swift in Sources */,
 				D33C8CCE20729F56006E8521 /* ShowActionSheetController.swift in Sources */,

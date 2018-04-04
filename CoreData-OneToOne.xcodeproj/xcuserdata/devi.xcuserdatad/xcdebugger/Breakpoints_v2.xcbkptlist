@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreDataClasses/Person+CoreDataClass.swift"
-            timestampString = "544412655.929225"
+            filePath = "CoreData-OneToOne/Controller/CorrespondingLicenseViewController.swift"
+            timestampString = "544507324.479339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "updateContent(name:age:fatherName:address:updatedPersonObj:)"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "getDrivingLicenseDetails()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreDataClasses/Person+CoreDataClass.swift"
-            timestampString = "544412655.9297071"
+            filePath = "CoreData-OneToOne/Controller/CorrespondingLicenseViewController.swift"
+            timestampString = "544507371.965405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "updateContent(name:age:fatherName:address:updatedPersonObj:)"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "getDrivingLicenseDetails()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreDataClasses/Person+CoreDataClass.swift"
-            timestampString = "544412655.930021"
+            filePath = "CoreData-OneToOne/Controller/CorrespondingLicenseViewController.swift"
+            timestampString = "544507374.0749429"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "updateContent(name:age:fatherName:address:updatedPersonObj:)"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "getDrivingLicenseDetails()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreDataClasses/Person+CoreDataClass.swift"
-            timestampString = "544412655.930323"
+            filePath = "CoreDataClasses/DrivingLicense+CoreDataClass.swift"
+            timestampString = "544507390.544964"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "updateContent(name:age:fatherName:address:updatedPersonObj:)"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "fetchDetails(selectedPerson:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,13 +73,77 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreDataClasses/Person+CoreDataClass.swift"
-            timestampString = "544412655.930622"
+            filePath = "CoreDataClasses/DrivingLicense+CoreDataClass.swift"
+            timestampString = "544507391.026495"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "updateContent(name:age:fatherName:address:updatedPersonObj:)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "fetchDetails(selectedPerson:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataClasses/DrivingLicense+CoreDataClass.swift"
+            timestampString = "544507392.082245"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "fetchDetails(selectedPerson:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataClasses/DrivingLicense+CoreDataClass.swift"
+            timestampString = "544507392.860073"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "fetchDetails(selectedPerson:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataClasses/DrivingLicense+CoreDataClass.swift"
+            timestampString = "544507393.598042"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "fetchDetails(selectedPerson:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataClasses/DrivingLicense+CoreDataClass.swift"
+            timestampString = "544507397.426447"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "fetchDetails(selectedPerson:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

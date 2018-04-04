@@ -9,7 +9,6 @@
 
 import Foundation
 import CoreData
-import CoreData
 
 
 public class Person: NSManagedObject {
@@ -90,10 +89,5 @@ public class Person: NSManagedObject {
         }
         return true
         
-    }
-    
-    func getById(id: NSManagedObjectID) -> Person? {
-        let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        return managedContext.object(with: id) as? Person
     }
 }
