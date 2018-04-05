@@ -26,10 +26,10 @@
 		D3818F0F207236FE0025B394 /* CoreData_OneToOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3818F0E207236FE0025B394 /* CoreData_OneToOneUITests.swift */; };
 		D3818F20207242AA0025B394 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3818F1C207242AA0025B394 /* Person+CoreDataClass.swift */; };
 		D3818F21207242AA0025B394 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3818F1D207242AA0025B394 /* Person+CoreDataProperties.swift */; };
-		D3818F22207242AA0025B394 /* DrivingLicense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3818F1E207242AA0025B394 /* DrivingLicense+CoreDataClass.swift */; };
-		D3818F23207242AA0025B394 /* DrivingLicense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3818F1F207242AA0025B394 /* DrivingLicense+CoreDataProperties.swift */; };
 		D3818F28207242E40025B394 /* PersonsDisplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3818F26207242E40025B394 /* PersonsDisplayTableViewCell.swift */; };
 		D3818F29207242E40025B394 /* PersonsDisplayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3818F27207242E40025B394 /* PersonsDisplayTableViewCell.xib */; };
+		D38602E4207633F50022B261 /* DrivingLicense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38602E2207633F50022B261 /* DrivingLicense+CoreDataClass.swift */; };
+		D38602E5207633F50022B261 /* DrivingLicense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38602E3207633F50022B261 /* DrivingLicense+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,10 +78,10 @@
 		D3818F10207236FE0025B394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3818F1C207242AA0025B394 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D3818F1D207242AA0025B394 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D3818F1E207242AA0025B394 /* DrivingLicense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrivingLicense+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D3818F1F207242AA0025B394 /* DrivingLicense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrivingLicense+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D3818F26207242E40025B394 /* PersonsDisplayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsDisplayTableViewCell.swift; sourceTree = "<group>"; };
 		D3818F27207242E40025B394 /* PersonsDisplayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonsDisplayTableViewCell.xib; sourceTree = "<group>"; };
+		D38602E2207633F50022B261 /* DrivingLicense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrivingLicense+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D38602E3207633F50022B261 /* DrivingLicense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrivingLicense+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,10 +201,10 @@
 		D3818F24207242B40025B394 /* CoreDataClasses */ = {
 			isa = PBXGroup;
 			children = (
+				D38602E2207633F50022B261 /* DrivingLicense+CoreDataClass.swift */,
+				D38602E3207633F50022B261 /* DrivingLicense+CoreDataProperties.swift */,
 				D3818F1C207242AA0025B394 /* Person+CoreDataClass.swift */,
 				D3818F1D207242AA0025B394 /* Person+CoreDataProperties.swift */,
-				D3818F1E207242AA0025B394 /* DrivingLicense+CoreDataClass.swift */,
-				D3818F1F207242AA0025B394 /* DrivingLicense+CoreDataProperties.swift */,
 			);
 			path = CoreDataClasses;
 			sourceTree = "<group>";
@@ -368,17 +368,17 @@
 				D3818F20207242AA0025B394 /* Person+CoreDataClass.swift in Sources */,
 				D3818F21207242AA0025B394 /* Person+CoreDataProperties.swift in Sources */,
 				D33C8CC220724EE2006E8521 /* MGSwipeButton.m in Sources */,
+				D38602E4207633F50022B261 /* DrivingLicense+CoreDataClass.swift in Sources */,
 				D3818EF4207236FD0025B394 /* CoreData_OneToOne.xcdatamodeld in Sources */,
 				D33C8CCB207263E2006E8521 /* LicenseViewController.swift in Sources */,
 				D33C8CD020729FE1006E8521 /* ShowAlertController.swift in Sources */,
 				D327299E20746C68004A02D8 /* CorrespondingLicenseViewController.swift in Sources */,
-				D3818F22207242AA0025B394 /* DrivingLicense+CoreDataClass.swift in Sources */,
-				D3818F23207242AA0025B394 /* DrivingLicense+CoreDataProperties.swift in Sources */,
 				D33C8CCE20729F56006E8521 /* ShowActionSheetController.swift in Sources */,
 				D3818F28207242E40025B394 /* PersonsDisplayTableViewCell.swift in Sources */,
 				D3818EEE207236FD0025B394 /* ViewController.swift in Sources */,
 				D33C8CC92072566B006E8521 /* AddNewPersonViewController.swift in Sources */,
 				D33C8CC120724EE2006E8521 /* MGSwipeTableCell.m in Sources */,
+				D38602E5207633F50022B261 /* DrivingLicense+CoreDataProperties.swift in Sources */,
 				D3818EEC207236FD0025B394 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

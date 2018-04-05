@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="DrivingLicense" representedClassName=".DrivingLicense" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="dateOfBirth" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateOfBirth" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="drivingSchoolName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="expiryDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="expiryDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fatherName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="issuedDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="issuedDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="rtoOfficeName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -24,7 +24,7 @@
         <relationship name="drivinglicense" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="DrivingLicense" inverseName="person" inverseEntity="DrivingLicense" syncable="YES"/>
     </entity>
     <elements>
-        <element name="DrivingLicense" positionX="207" positionY="-9" width="128" height="223"/>
+        <element name="DrivingLicense" positionX="207" positionY="-9" width="128" height="225"/>
         <element name="Person" positionX="-63" positionY="-18" width="128" height="148"/>
     </elements>
 </model>

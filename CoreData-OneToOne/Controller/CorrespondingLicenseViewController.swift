@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CorrespondingLicenseViewController: UIViewController {
     
@@ -23,8 +24,7 @@ class CorrespondingLicenseViewController: UIViewController {
     @IBOutlet weak var dobLbl: UILabel!
     @IBOutlet weak var noRecordsFoundLbl: UILabel!
     
-    var individualPerson = Person()
-    var licenseDetails = DrivingLicense()
+    var individualPerson : Person?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,15 +32,18 @@ class CorrespondingLicenseViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = false
         self.getDrivingLicenseDetails()
+        self.navigationController?.navigationBar.isHidden = false
         let btn2 = UIBarButtonItem(image: UIImage(named: "BackArrow.pdf"), style: .plain, target: self, action: #selector(backBtnOnTap))
         self.navigationItem.leftBarButtonItem = btn2
     }
     
     @objc func addBtnOnTap() {
         let licenseVC = self.storyboard?.instantiateViewController(withIdentifier: "LicenseViewController") as? LicenseViewController
-        licenseVC?.individualPerson = self.individualPerson
+        licenseVC?.type = .Save
+        if let person = self.individualPerson {
+            licenseVC?.individualPerson = person
+        }
         self.navigationController?.pushViewController(licenseVC!, animated: true)
     }
     
@@ -49,17 +52,21 @@ class CorrespondingLicenseViewController: UIViewController {
     }
     
     func getDrivingLicenseDetails()  {
-        if let lDetails = DrivingLicense.fetchDetails(selectedPerson: self.individualPerson) {
+        if let person = individualPerson?.drivinglicense {
             self.noRecordsFoundLbl.isHidden = true
             let btn1 = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
             self.navigationItem.rightBarButtonItem = btn1
             self.superView.isHidden = false
             self.scrlView.isScrollEnabled = true
-            self.nameLbl.text = lDetails.name
-            self.fatherNameLbl.text = lDetails.fatherName
-            self.addressLBl.text = lDetails.address
-            self.rtoNameLbl.text = lDetails.rtoOfficeName
-            self.drivingSchoolNameLbl.text = lDetails.drivingSchoolName
+            self.nameLbl.text = person.name
+            self.fatherNameLbl.text = person.fatherName
+            self.addressLBl.text = person.address
+            self.rtoNameLbl.text = person.rtoOfficeName
+            self.dobLbl.text = person.dateOfBirth
+            self.issuedDateLbl.text = person.issuedDate
+            self.expiryDateLbl.text = person.expiryDate
+            self.vehicleTypeLbl.text = person.vehicleType
+            self.drivingSchoolNameLbl.text = person.drivingSchoolName
         }
         else {
             self.noRecordsFoundLbl.isHidden = false
@@ -68,6 +75,37 @@ class CorrespondingLicenseViewController: UIViewController {
             self.superView.isHidden = true
             self.scrlView.isScrollEnabled = false
         }
+    }
+    
+    @IBAction func editBtnOnTap(_ sender: UIButton) {
+        let licenseVc = self.storyboard?.instantiateViewController(withIdentifier: "LicenseViewController") as? LicenseViewController
+        licenseVc?.individualPerson = self.individualPerson
+        if let licenseObjId = self.individualPerson?.drivinglicense {
+            licenseVc?.obId = licenseObjId.objectID
+        }
+        licenseVc?.type = .Update
+        self.navigationController?.pushViewController(licenseVc!, animated: true)
+    }
+    
+    @IBAction func deleteBtnOnTap(_ sender: UIButton) {
+        if let license = self.individualPerson?.drivinglicense {
+            let flag = DrivingLicense.deleteOperation(license: license)
+            if flag == true {
+                self.showAlert(msg: "Deleted successfully!", title: "")
+            }
+        }
+    }
+    
+    func showAlert(msg : String, title : String)
+    {
+        let alertController = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
+        {
+            action -> Void in
+            self.navigationController?.popViewController(animated: true)
+        })
+        self.present(alertController, animated: true)
+        {}
     }
     
     func setRightBarButtonItem() {
